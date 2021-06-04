@@ -1,4 +1,4 @@
-Car-Quiz
+Car_Quiz_Android_Game
 
 This repo contains a quiz game for android mobiles developed using Java.
 
