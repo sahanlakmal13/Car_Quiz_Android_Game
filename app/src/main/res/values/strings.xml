@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Car Guess</string>
+    <string name="identify_the_car_make">Identify the Car Make</string>
+    <string name="hints">Hints</string>
+    <string name="identify_the_car_image">Identify the Car Image</string>
+    <string name="advanced_level">Advanced Level</string>
+    <string name="timer">Time Mode</string>
+    <string name="make" />
+    <string name="identify">Identify</string>
+    <string name="correct">CORRECT!</string>
+    <string name="submit">Submit</string>
+    <string name="enter_one_character">Enter one character</string>
+    <string name="wrong">WRONG!</string>
+    <string name="next">Next</string>
+    <string name="secRemain">\seconds remaining: \</string>
+    <string name="timeOver">Time Over!</string>
+    <string name="score">\Score: \</string>
+    <string name="initialScore">Score: 0</string>
+    <string name="incAttempts">You have 3 incorrect attempts left!</string>
+    <string name="hints_image_view">Hints Image View</string>
+    <string name="car_make_image">Car make image</string>
+    <string name="car_image_3">Car image 3</string>
+    <string name="car_image_2">Car image 2</string>
+    <string name="car_image_1">Car image 1</string>
+    <string name="enter_car_1">Enter Car 1</string>
+    <string name="enter_car_2">Enter Car 2</string>
+    <string name="enter_car_3">Enter Car 3</string>
+    <string name="image_2">Image 2</string>
+    <string name="image_1">Image 1</string>
+    <string name="image_3">Image 3</string>
+</resources>

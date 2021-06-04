@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/idCarImage"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="@string/identify_the_car_image"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#2DE336"
+        app:layout_constraintBottom_toBottomOf="@+id/advanceLevel"
+        app:layout_constraintEnd_toStartOf="@+id/advanceLevel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/advanceLevel"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/idCarMake"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="@string/identify_the_car_make"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#2DE336"
+        app:layout_constraintBottom_toTopOf="@+id/idCarImage"
+        app:layout_constraintEnd_toStartOf="@+id/hints"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/hints"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="@string/hints"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#2DE336"
+        app:layout_constraintBottom_toTopOf="@+id/advanceLevel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/idCarMake"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/advanceLevel"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="@string/advanced_level"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#2DE336"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/idCarImage"
+        app:layout_constraintTop_toBottomOf="@+id/hints"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+        android:id="@+id/switchTimeMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer"
+        app:layout_constraintBottom_toTopOf="@+id/hints"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

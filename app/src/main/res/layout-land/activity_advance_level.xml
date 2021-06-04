@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdvanceLevelActivity">
+
+
+    <ImageView
+        android:id="@+id/carImage2"
+        android:layout_width="230dp"
+        android:layout_height="165dp"
+        android:clickable="true"
+        android:contentDescription="@string/image_2"
+        android:focusable="true"
+        android:padding="3dp"
+        android:src="@drawable/audi3"
+        app:layout_constraintBottom_toBottomOf="@+id/carImage3"
+        app:layout_constraintEnd_toStartOf="@+id/carImage3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/carImage1"
+        app:layout_constraintTop_toTopOf="@+id/carImage3" />
+
+    <ImageView
+        android:id="@+id/carImage1"
+        android:layout_width="230dp"
+        android:layout_height="165dp"
+        android:clickable="true"
+        android:contentDescription="@string/image_1"
+        android:focusable="true"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/carImage2"
+        app:layout_constraintEnd_toStartOf="@+id/carImage2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/carImage2" />
+
+    <ImageView
+        android:id="@+id/carImage3"
+        android:layout_width="230dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="152dp"
+        android:clickable="true"
+        android:contentDescription="@string/image_3"
+        android:focusable="true"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/carImage2" />
+
+    <EditText
+        android:id="@+id/carImage1TextInput"
+        android:layout_width="115dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="@string/enter_car_1"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/carImage1"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="@+id/carImage1"
+        app:layout_constraintTop_toBottomOf="@+id/carImage1"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <EditText
+        android:id="@+id/carImage2TextInput"
+        android:layout_width="115dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="@string/enter_car_2"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/carImage2"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/carImage2"
+        app:layout_constraintTop_toBottomOf="@+id/carImage2"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <EditText
+        android:id="@+id/carImage3TextInput"
+        android:layout_width="115dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="@string/enter_car_3"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/carImage3"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/carImage3"
+        app:layout_constraintTop_toBottomOf="@+id/carImage3"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textColor="#000000"
+        app:backgroundTint="#2DE336"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/carImage3"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <TextView
+        android:id="@+id/msgTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/submitButton"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/carImage1TextView" />
+
+    <TextView
+        android:id="@+id/carImage1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFE500"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/carImage1TextInput"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/carImage1TextInput"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <TextView
+        android:id="@+id/carImage2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFE500"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/carImage2TextInput"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toEndOf="@+id/carImage1TextView"
+        app:layout_constraintTop_toBottomOf="@+id/carImage2TextInput"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <TextView
+        android:id="@+id/carImage3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFE500"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/carImage3TextInput"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toEndOf="@+id/carImage2TextView"
+        app:layout_constraintTop_toBottomOf="@+id/carImage3TextInput"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initialScore"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/carImage1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/carImage1"
+        app:layout_constraintEnd_toStartOf="@+id/scoreTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
